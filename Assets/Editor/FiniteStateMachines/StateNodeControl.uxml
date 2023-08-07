@@ -1,0 +1,22 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Editor/FiniteStateMachines/StateNodeControl.uss?fileID=7433441132597879392&amp;guid=59779a0ba2115634bb282bd396757f5a&amp;type=3#StateNodeControl" />
+    <ui:VisualElement name="node-border" style="background-color: rgb(62, 62, 62); border-left-color: rgb(32, 32, 32); border-right-color: rgb(32, 32, 32); border-top-color: rgb(32, 32, 32); border-bottom-color: rgb(32, 32, 32); border-left-width: 2px; border-right-width: 2px; border-top-width: 2px; border-bottom-width: 2px; border-top-left-radius: 5px; border-bottom-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px;">
+        <ui:VisualElement name="title">
+            <ui:Label name="title-label" text="StateIdle" class="unity-text-element unity-label" />
+            <ui:VisualElement name="title-button-container">
+                <ui:VisualElement name="collapse-button">
+                    <ui:VisualElement name="icon" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:Label tabindex="-1" text="State" display-tooltip-when-elided="true" name="State" style="-unity-text-align: upper-center; margin-top: 8px;" />
+        <ui:VisualElement name="contents">
+            <ui:VisualElement name="divider" class="horizontal" style="height: 16px;" />
+            <ui:VisualElement name="top" style="justify-content: center; height: 32px; flex-direction: row;">
+                <ui:VisualElement name="input" style="flex-grow: 1; left: -5px;" />
+                <ui:VisualElement name="output" style="flex-grow: 1; right: -5px;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="selection-border" picking-mode="Ignore" />
+</ui:UXML>
