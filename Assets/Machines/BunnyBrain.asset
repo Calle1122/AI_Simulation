@@ -104,7 +104,7 @@ MonoBehaviour:
   m_Name: BunnyEatCarrot
   m_EditorClassIdentifier: 
   m_ID: -664315861
-  m_vPosition: {x: 357, y: -77}
+  m_vPosition: {x: 301.66663, y: -45.333344}
   m_connectedStates:
   - {fileID: 425812833443278874}
   - {fileID: 8245331337069421677}
@@ -158,7 +158,7 @@ MonoBehaviour:
   m_Name: BunnyGetPregnant
   m_EditorClassIdentifier: 
   m_ID: 2020584476
-  m_vPosition: {x: -89, y: 159}
+  m_vPosition: {x: -66.33334, y: 132.66667}
   m_connectedStates:
   - {fileID: 8245331337069421677}
   - {fileID: -1297071069977305861}
