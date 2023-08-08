@@ -37,8 +37,12 @@ namespace Game.States
                     return GetConnectedState<BunnySeekCarrot>();
                 }
             }
+            if (Bunny.MatingCooldown == 30)
+            {
+                return GetConnectedState<BunnySeekMate>();
+            }
 
-            return GetRandomConnectedState(new System.Type[] { typeof(BunnyFrolic), typeof(BunnyRandomMove), typeof(BunnySeekMate) });
+            return GetRandomConnectedState(new System.Type[] { typeof(BunnyFrolic), typeof(BunnyRandomMove) });
         }
 
         public override bool ShouldTransitionToState(out State nextState)

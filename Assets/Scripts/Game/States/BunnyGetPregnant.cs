@@ -37,6 +37,9 @@ namespace Game.States
                 
                 //Reset scale and move on
                 Bunny.MeshTransform.localScale = new Vector3(1, 1, 1);
+
+                Bunny.MatingCooldown = 0f;
+                
                 nextState = GetRandomConnectedState(new System.Type[] { typeof(BunnyIdle), typeof(BunnyRandomMove) });
                 return true;
             }

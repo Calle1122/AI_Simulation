@@ -20,5 +20,13 @@ namespace Game.States
             // increase hunger
             Bunny.Hunger++;
         }
+
+        public override void MachineTick()
+        {
+            base.MachineTick();
+
+            Bunny.LifeTime += Time.deltaTime;
+            Bunny.MatingCooldown += Time.deltaTime;
+        }
     }
 }

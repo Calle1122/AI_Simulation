@@ -33,6 +33,58 @@ MonoBehaviour:
   - {fileID: -9126634801458595126}
   - {fileID: 8221703937176172602}
   - {fileID: 4662880233267393050}
+  - {fileID: 8245015284376915305}
+  - {fileID: 1042196272477484852}
+--- !u!114 &1042196272477484852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7b70461fbda9e41aa04acbd305f3ca, type: 3}
+  m_Name: WolfGetPregnant
+  m_EditorClassIdentifier: 
+  m_ID: 1271876508
+  m_vPosition: {x: 291.33334, y: -207.33334}
+  m_connectedStates:
+  - {fileID: 1276498016259293949}
+  - {fileID: -9126634801458595126}
+  m_size:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.0075
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 136
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 10
+      value: 0.0125
+      inSlope: -0.009121709
+      outSlope: -0.009121709
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.1464571
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 11
+      value: 0.0075
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!114 &1276498016259293949
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51,6 +103,7 @@ MonoBehaviour:
   - {fileID: -9126634801458595126}
   - {fileID: 8221703937176172602}
   - {fileID: 4662880233267393050}
+  - {fileID: 8245015284376915305}
 --- !u!114 &4662880233267393050
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -84,4 +137,21 @@ MonoBehaviour:
   m_vPosition: {x: 302, y: 1}
   m_connectedStates:
   - {fileID: 4662880233267393050}
+  - {fileID: 1276498016259293949}
+--- !u!114 &8245015284376915305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28b443dd713ae4942a3a5855aa3834dc, type: 3}
+  m_Name: WolfSeekMate
+  m_EditorClassIdentifier: 
+  m_ID: -899967583
+  m_vPosition: {x: -23.999975, y: -207.3333}
+  m_connectedStates:
+  - {fileID: 1042196272477484852}
   - {fileID: 1276498016259293949}

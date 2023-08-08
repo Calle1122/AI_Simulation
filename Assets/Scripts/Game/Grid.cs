@@ -178,12 +178,12 @@ namespace Game
             }
 
             // create a few starting items
-            for (int i = 0; i < 10; ++i)
+            for (int i = 0; i < 12; ++i)
             {
                 CreateItemAt(m_carrotPrefab, GetRandomEmptyTile());                
             }
 
-            for (int i = 0; i < 5; ++i)
+            for (int i = 0; i < 8; ++i)
             {
                 CreateItemAt(m_bunnyPrefab, GetRandomEmptyTile());
             }

@@ -38,7 +38,12 @@ namespace Game.States
                 }
             }
 
-            return GetRandomConnectedState(new System.Type[] { typeof(WolfRandomMove)/*, typeof(WolfSeekMate)*/ });
+            if (Wolf.MatingCooldown == 90)
+            {
+                return GetConnectedState<WolfSeekMate>();
+            }
+
+            return GetRandomConnectedState(new System.Type[] { typeof(WolfRandomMove) });
         }
 
         public override bool ShouldTransitionToState(out State nextState)

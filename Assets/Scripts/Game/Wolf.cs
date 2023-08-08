@@ -15,6 +15,10 @@ namespace Game
         [SerializeField]
         private int         m_iHunger;
 
+        public bool IsLookingForMate;
+        
+        public float m_matingCooldown = 45f;
+        
         #region Properties
 
         public Transform MeshTransform => m_meshTransform;
@@ -36,6 +40,16 @@ namespace Game
             }            
         }
 
+        public float MatingCooldown
+        {
+            get => m_matingCooldown;
+
+            set
+            {
+                m_matingCooldown = Mathf.Min(value, 90);
+            }
+        }
+
         public bool IsHungry => m_iHunger > 6;
 
         #endregion
@@ -44,8 +58,17 @@ namespace Game
         {
             base.Start();
 
+            StatManager.Instance.AliveWolves++;
+            
             m_meshTransform = transform.Find("Direction/Mesh");
             m_directionTransform = transform.Find("Direction");
+        }
+
+        protected override void OnDestroy()
+        {
+            base.OnDestroy();
+
+            StatManager.Instance.AliveWolves--;
         }
     }
 }

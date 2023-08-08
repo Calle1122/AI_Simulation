@@ -20,5 +20,12 @@ namespace Game.States
             // increase hunger
             Wolf.Hunger++;
         }
+        
+        public override void MachineTick()
+        {
+            base.MachineTick();
+
+            Wolf.MatingCooldown += Time.deltaTime;
+        }
     }
 }
